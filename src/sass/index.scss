@@ -1,2 +1,4 @@
-@import './common';
-@import './example';
+@import './utils/glob';
+@import './base/glob';
+@import './components/glob';
+@import './layout/glob';
