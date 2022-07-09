@@ -1,2 +1,38 @@
-.heder-hero {
+body {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 1036px;
+
+  background-image: url(../images/header/bg/png/bg-mob.png);
+
+  //   background-image: -webkit-image-set(
+  //     url(../images/header/bg/webp/bg-mob.webp)
+  //   );
+
+  // tablet
+
+  @include mq(tablet) {
+    background-image: url(../images/header/bg/png/bg-tab.png);
+
+    // background-image: -webkit-image-set(
+    //   url(../images/header/bg/webp/bg-tab.webp)
+    // );
+  }
+
+  // desktop
+
+  @include mq(desktop) {
+    background-image: url(../images/header/bg/png/bg-desk.png);
+
+    // background-image: -webkit-image-set(
+    //   url(../images/header/bg/webp/bg-desk.webp)
+    // );
+  }
+}
+
+.header-hero {
+  overflow: visible;
+  background-position: center;
+  background-size: cover;
 }

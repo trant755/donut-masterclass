@@ -2,4 +2,15 @@
 
 body {
   min-width: 320px;
+
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: $font-color-dark;
+
+  @include mq(desktop) {
+    background-color: #fffff9;
+  }
 }
