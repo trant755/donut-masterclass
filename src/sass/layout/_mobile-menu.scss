@@ -1,0 +1,12 @@
+.burger-btn{
+    background-color: #FEF3E4;
+}
+.burger-btn .icon-close{
+    display: none;
+}
+.burger-btn.is-open .icon-close{
+    display: block;
+}
+.burger-btn.is-open .icon-burger{
+    display: none;
+}
