@@ -1,0 +1,45 @@
+.reviews {
+  padding-top: 76px;
+  padding-bottom: 60px;
+  &-title {
+    margin-bottom: 20px;
+
+    text-align: center;
+  }
+  &-list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+
+    display: flex;
+    justify-content: center;
+  }
+  &-item {
+    list-style: none;
+  }
+  &-img {
+    margin-bottom: 8px;
+  }
+  &-star {
+    margin-bottom: 8px;
+
+    display: flex;
+    justify-content: center;
+  }
+  &-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+  &-name {
+    text-align: center;
+  }
+  &-text {
+    margin-bottom: 32px;
+
+    text-align: center;
+  }
+  &-counter {
+    text-align: center;
+  }
+}
