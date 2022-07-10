@@ -38,29 +38,48 @@
           />
         </picture>
       </a>
-
       <button 
-      type="button" 
-      class="btn burger-btn"
-      aria-label="Mobile menu switch">
-        <svg width="30" height="30">
-          <use class="icon-close" href="./images/sprite.svg#close"></use>
-          <use class="icon-burger" href="./images/sprite.svg#burger"></use>
-        </svg>
+        type="button" 
+        class="btn burger-btn"
+        aria-label="Mobile menu switch"
+        aria-expanded="false"
+        data-menu-button >
+          <svg width="30" height="30">
+            <use class="icon-close" href="./images/sprite.svg#close"></use>
+            <use class="icon-burger" href="./images/sprite.svg#burger"></use>
+          </svg>
       </button>
-
       <nav class="navigation">
-        <ul class="list">
-          <li>
+        <a class="logo link" href="./index.html">
+          <picture>
+            <source
+              media="(max-width: 1279.98px)"
+              srcset="
+                ./images/header/logo/logo-mob-menu.png    1x,
+                ./images/header/logo/logo@2x-tab.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="./images/header/logo/logo-mob-menu.png"
+              alt="logo"
+              width="190"
+              height="85"
+            />
+          </picture>
+          
+        </a>
+        <ul class="navigation__list list">
+          <li class="navigation__item">
             <a class="link" href="">About us</a>
           </li>
-          <li>
+          <li class="navigation__item">
             <a class="link" href="">Program</a>
           </li>
-          <li>
+          <li class="navigation__item">
             <a class="link" href="">Reviews</a>
           </li>
-          <li>
+          <li class="navigation__item">
             <a class="link" href="">Contacts</a>
           </li>
         </ul>
