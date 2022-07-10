@@ -1,7 +1,7 @@
 .footer {
+    position: relative;
     background-color: #ffffff;
     padding-top: 16px;
-    padding-bottom: 20px;
 }
 
 .footer__socials-list {
@@ -16,14 +16,46 @@
     margin-left: 16px;
 }
 
-.footer__icon {
+.footer__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+
+    &:hover, &:focus {
+        outline: 1px solid #AB816C;
+    }
+}
+
+.footer__social__icon {
     fill: #2E2520;
+
+    .footer__social-link:hover &,
+    .footer__social-link:focus & {
+        fill: #AB816C;
+    }
 }
 
 .footer__bottom {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        padding-right: 61px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-right: 289px;
+    }
+}
+
+.footer__icon {
+    margin-right: 4px;
 }
 
 .footer__telephone,
@@ -31,13 +63,38 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.footer__number,
-.footer__address {
-    margin-left: 4px;
 
     font-size: 16px;
     line-height: 1.25;
     color: #2E2520;
+
+    @media screen and (max-width: 1279px) {
+        z-index: 999;
+    }
+}
+
+.footer__telephone:hover,
+.footer__telephone:focus {
+    color: #AB816C;
+}
+
+.footer__telephone .footer__icon {
+    fill: currentColor;
+    margin-right: 4px;
+}
+
+.footer__pic {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    @media screen and (min-width: 768px) {
+        width: 184px;
+        height: 119px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 302px;
+        height: 175px;
+    }
 }

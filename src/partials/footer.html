@@ -2,7 +2,10 @@
     <div class="container">
         <ul class="footer__socials-list list">
             <li class="footer__social-item">
-                <a href="" class="footer__social-link link">
+                <a href="" class="footer__social-link link"
+                target="_blank"
+                rel="noreferrer noopener"
+                title="Twitter">
                     <svg class="footer__social__icon" width="16" height="16">
                         <use href="./images/footer/footer-sprite.svg#icon-twitter">
                         </use>
@@ -10,7 +13,10 @@
                 </a>
             </li>
             <li class="footer__social-item">
-                <a href="" class="footer__social-link link">
+                <a href="" class="footer__social-link link"
+                target="_blank"
+                rel="noreferrer noopener"
+                title="Instagram">
                     <svg class="footer__social__icon" width="16" height="16">
                         <use href="./images/footer/footer-sprite.svg#icon-instagram">
                         </use>
@@ -18,7 +24,10 @@
                 </a>
             </li>
             <li class="footer__social-item">
-                <a href="" class="footer__social-link link">
+                <a href="" class="footer__social-link link"
+                target="_blank"
+                rel="noreferrer noopener"
+                title="Facebook">
                     <svg class="footer__social__icon" width="16" height="16">
                         <use href="./images/footer/footer-sprite.svg#icon-facebook">
                         </use>
@@ -32,19 +41,42 @@
                     <use href="./images/footer/footer-sprite.svg#icon-telephone">
                     </use>
                 </svg>
-                <span class="footer__number">
-                    (910)222-8855
-                </span>    
+                (910)222-8855
             </a>
             <p class="footer__location">
                 <svg class="footer__icon" width="16" height="16">
                     <use href="./images/footer/footer-sprite.svg#icon-location">
                     </use>
                 </svg>
-                <span class="footer__address">
-                    New York
-                </span>
+                New York
             </p>
         </div>
     </div>
+    <picture>
+        <source
+            srcset="
+            ./images/footer/mob/webp/wheat-flour-84.webp 84w,
+            ./images/footer/mob/webp/wheat-flour-168.webp 168w,
+            ./images/footer/tab/webp/wheat-flour-184.webp 184w,
+            ./images/footer/desk/webp/wheat-flour-302.webp 302w,
+            ./images/footer/tab/webp/wheat-flour-368.webp 368w,
+            ./images/footer/desk/webp/wheat-flour-604.webp 604w"
+            
+            type="image/webp" />
+        <img
+            class="footer__pic"
+            srcset="
+            ./images/footer/mob/png/wheat-flour-84.png 84w,
+            ./images/footer/mob/png/wheat-flour-168.png 168w,
+            ./images/footer/tab/png/wheat-flour-184.png 184w,
+            ./images/footer/desk/png/wheat-flour-302.png 302w,
+            ./images/footer/tab/png/wheat-flour-368.png 368w,
+            ./images/footer/desk/png/wheat-flour-604.png 604w"
+
+            src="./images/footer/mob/png/wheat-flour-84.png"
+            alt="flour in a bowl"
+            sizes="(min-width: 1200px) 604px, (min-width: 768px) 184px, (max-width: 480px) 84px, 100vw"
+            width="84"
+            height="73">
+    </picture>
 </footer>
