@@ -62,6 +62,8 @@
     border-bottom: 1px solid #AB816C;
     border-left: 0px solid transparent;
 
+    outline: none;
+
     &:hover, &:focus {
         border-bottom: 1px solid #2E2520;
     }
@@ -83,6 +85,13 @@
     color: rgba(171, 129, 108, 0.5);
     font-size: 16px;
     line-height: 1.25;
+}
+
+.contact__input:invalid {
+    border-top: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 1px solid #ff0000;
+    border-left: 0px solid transparent;
 }
 
 .contact__button {
