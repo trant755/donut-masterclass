@@ -10,6 +10,14 @@
     align-items: center;
     margin-bottom: 32px;
     padding-left: 0;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 80px;
+    }
 }
 
 .footer__social-item + .footer__social-item {
@@ -25,6 +33,8 @@
     border-radius: 50%;
     background-color: #ffffff;
 
+    @include animation(outline);
+
     &:hover, &:focus {
         outline: 1px solid #AB816C;
     }
@@ -32,6 +42,8 @@
 
 .footer__social__icon {
     fill: #2E2520;
+
+    @include animation(fill);
 
     .footer__social-link:hover &,
     .footer__social-link:focus & {
@@ -58,7 +70,32 @@
     margin-right: 4px;
 }
 
-.footer__telephone,
+.footer__telephone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: #2E2520;
+
+    @media screen and (max-width: 1279px) {
+        z-index: 999;
+    }
+
+    @include animation(color);
+
+    &:hover,
+    &:focus {
+    color: #AB816C;
+    }
+
+    & .footer__icon {
+        fill: currentColor;
+        margin-right: 4px;
+    }
+}
+
 .footer__location {
     display: flex;
     justify-content: center;
@@ -71,16 +108,8 @@
     @media screen and (max-width: 1279px) {
         z-index: 999;
     }
-}
 
-.footer__telephone:hover,
-.footer__telephone:focus {
-    color: #AB816C;
-}
-
-.footer__telephone .footer__icon {
-    fill: currentColor;
-    margin-right: 4px;
+    @include animation(color);
 }
 
 .footer__pic {
