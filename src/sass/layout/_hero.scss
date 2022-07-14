@@ -30,7 +30,26 @@
   justify-content: center;
   width: 145px;
   height: 40px;
+  margin-bottom: 40px;
 
   background-color: $brown;
   border-radius: 25px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials__item {
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
+// donuts group
+
+.donut-group {
+  position: absolute;
 }
