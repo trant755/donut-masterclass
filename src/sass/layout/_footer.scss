@@ -2,6 +2,7 @@
     position: relative;
     background-color: #ffffff;
     padding-top: 16px;
+    padding-bottom: 20px;
 }
 
 .footer__socials-list {
@@ -40,7 +41,7 @@
     }
 }
 
-.footer__social__icon {
+.footer__social-icon {
     fill: #2E2520;
 
     @include animation(fill);
@@ -55,7 +56,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 20px;
 
     @media screen and (min-width: 768px) {
         padding-right: 61px;
