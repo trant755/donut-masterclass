@@ -7,8 +7,8 @@
         <source
           media="(min-width: 1280px)"
           srcset="
-            ./images/reviews/desk/john@1x-desctop.png 1x,
-            ./images/reviews/desk/john@2x-desctop.png 2x
+            ./images/reviews/desk/png/john@1x-desktop.png 1x,
+            ./images/reviews/desk/png/john@2x-desktop.png 2x
           "
           type="image/webp"
         />
@@ -16,31 +16,19 @@
         <source
           media="(min-width: 768px)"
           srcset="
-            ./images/reviews/desk/john@1x-desctop.png 1x,
-            ./images/reviews/desk/john@2x-desctop.png 2x
+            ./images/reviews/tab/png/john@1x-tablet.png 1x,
+            ./images/reviews/tab/png/john@2x-tablet.png 2x
           "
           srcset="
-            ./images/reviews/desk/john@1x-desctop.png 1x,
-            ./images/reviews/desk/john@2x-desctop.png 2x
+            ./images/reviews/tab/png/john@1x-tablet.png 1x,
+            ./images/reviews/tab/png/john@2x-tablet.png 2x
           "
           type="image/webp"
         />
-        <!-- Набір зображень для мобільних екранів -->
-        <source
-          media="(max-width: 767px)"
-          srcset="
-            ./images/reviews/desk/john@1x-desctop.png 1x,
-            ./images/reviews/desk/john@2x-desctop.png 2x
-          "
-          type="image/webp"
-        />
-
         <img
           class="reviews__img"
-          src="./images/reviews/desk/john@1x-desctop.png 1x,"
-          alt="flour in a bowl"
-          width="84"
-          height="73"
+          src="./images/reviews/desk/png/john@1x-desktop.png"
+          alt="John photo"
         />
       </picture>
       <div class="reviews__star">
@@ -64,11 +52,45 @@
     </li>
 
     <li class="reviews__item reviews__item--will">
-      <img
-        src="./images/reviews/pic.jpg"
-        alt="фото человека"
-        class="reviews__img"
-      />
+      <picture>
+        <!-- Набір зображень для десктопних екранів -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/reviews/desk/png/will@1x-desktop.png 1x,
+            ./images/reviews/desk/png/will@2x-desktop.png 2x
+          "
+          type="image/webp"
+        />
+        <!-- Набір зображень для планшетних екранів -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/reviews/tab/png/will@1x-tablet.png 1x,
+            ./images/reviews/tab/png/will@2x-tablet.png 2x
+          "
+          srcset="
+            ./images/reviews/tab/png/will@1x-tablet.png 1x,
+            ./images/reviews/tab/png/will@2x-tablet.png 2x
+          "
+          type="image/webp"
+        />
+        <!-- Набір зображень для мобільних екранів -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/reviews/mob/png/will@1x-mobil.png 1x,
+            ./images/reviews/mob/png/will@2x-mobil.png 2x
+          "
+          type="image/webp"
+        />
+
+        <img
+          class="reviews__img"
+          src="./images/reviews/desk/png/will@1x-desktop.png"
+          alt="Will photo"
+        />
+      </picture>
       <div class="reviews__star">
         <svg class="reviews__icon">
           <use href="./images/sprite.svg#star-all"></use>
@@ -90,11 +112,35 @@
     </li>
 
     <li class="reviews__item reviews__item--elisabeth">
-      <img
-        src="./images/reviews/pic.jpg"
-        alt="фото человека"
-        class="reviews__img"
-      />
+      <picture>
+        <!-- Набір зображень для десктопних екранів -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/reviews/desk/png/elisabeth@1x-desktop.png 1x,
+            ./images/reviews/desk/png/elisabeth@2x-desktop.png 2x
+          "
+          type="image/webp"
+        />
+        <!-- Набір зображень для планшетних екранів -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/reviews/tab/png/elisabeth@1x-tablet.png 1x,
+            ./images/reviews/tab/png/elisabeth@2x-tablet.png 2x
+          "
+          srcset="
+            ./images/reviews/tab/png/elisabeth@1x-tablet.png 1x,
+            ./images/reviews/tab/png/elisabeth@2x-tablet.png 2x
+          "
+          type="image/webp"
+        />
+        <img
+          class="reviews__img"
+          src="./images/reviews/desk/png/elisabeth@1x-desktop.png"
+          alt="Will photo"
+        />
+      </picture>
       <div class="reviews__star">
         <svg class="reviews__icon">
           <use href="./images/sprite.svg#star-all"></use>
