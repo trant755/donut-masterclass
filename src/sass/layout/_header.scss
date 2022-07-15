@@ -34,3 +34,15 @@ body {
     // );
   }
 }
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation {
+  display: none;
+}
+
+.burger-btn {
+  display: none;
+}
