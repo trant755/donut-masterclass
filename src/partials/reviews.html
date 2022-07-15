@@ -2,11 +2,47 @@
   <h1 class="reviews__title">Rewiews</h1>
   <ul class="reviews__list">
     <li class="reviews__item reviews__item--john">
-      <img
-        src="./images/reviews/pic.jpg"
-        alt="John photo"
-        class="reviews__img"
-      />
+      <picture>
+        <!-- Набір зображень для десктопних екранів -->
+        <source
+          media="(min-width: 1280px)"
+          srcset="
+            ./images/reviews/desk/john@1x-desctop.png 1x,
+            ./images/reviews/desk/john@2x-desctop.png 2x
+          "
+          type="image/webp"
+        />
+        <!-- Набір зображень для планшетних екранів -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/reviews/desk/john@1x-desctop.png 1x,
+            ./images/reviews/desk/john@2x-desctop.png 2x
+          "
+          srcset="
+            ./images/reviews/desk/john@1x-desctop.png 1x,
+            ./images/reviews/desk/john@2x-desctop.png 2x
+          "
+          type="image/webp"
+        />
+        <!-- Набір зображень для мобільних екранів -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/reviews/desk/john@1x-desctop.png 1x,
+            ./images/reviews/desk/john@2x-desctop.png 2x
+          "
+          type="image/webp"
+        />
+
+        <img
+          class="reviews__img"
+          src="./images/reviews/desk/john@1x-desctop.png 1x,"
+          alt="flour in a bowl"
+          width="84"
+          height="73"
+        />
+      </picture>
       <div class="reviews__star">
         <svg class="reviews__icon">
           <use href="./images/sprite.svg#star-all"></use>
