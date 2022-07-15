@@ -1,0 +1,54 @@
+.reviews {
+  padding-top: 20px;
+  padding-bottom: 32px;
+  line-height: 1.25;
+  &__title {
+    font-family: 'Caveat Brush';
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+  }
+  &__list {
+    margin-bottom: 8px;
+
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    list-style: none;
+  }
+  &__img {
+    width: 280px;
+    margin-bottom: 8px;
+  }
+  &__star {
+    margin-bottom: 8px;
+
+    display: flex;
+    justify-content: center;
+  }
+  &__icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+  &__name {
+    text-align: center;
+  }
+  &__text {
+    margin-bottom: 32px;
+
+    text-align: center;
+  }
+  &__counter {
+    text-align: center;
+  }
+}
+
+.reviews__item--john {
+  display: none;
+}
+
+.reviews__item--elisabeth {
+  display: none;
+}
