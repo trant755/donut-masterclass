@@ -1,7 +1,9 @@
 //! Скрипт плавной прокрутки по якорным ссылям
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
-  animationTime = 300,
-  framesCount = 20;
+  //? Время анимации в мс
+  animationTime = 1000,
+  //? Кадров за время анимации, чем больше тем плавнее
+  framesCount = 250;
 
 anchors.forEach(function (item) {
   item.addEventListener('click', function (e) {
