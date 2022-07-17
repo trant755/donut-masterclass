@@ -1,0 +1,786 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.btn {
+  border-style: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  min-width: 320px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #2e2520;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 461px;
+  background-image: url(../images/header/bg/png/bg-mob.png);
+}
+@media screen and (min-width: 1280px) {
+  body {
+    background-color: #fffff9;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/header/bg/png/bg-tab.png);
+    background-size: 100% 622px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    background-image: url(../images/header/bg/png/bg-desk.png);
+    background-size: 100% 1036px;
+  }
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+body {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 461px;
+  background-image: url(../images/header/bg/png/bg-mob.png);
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/header/bg/png/bg-tab.png);
+    background-size: 100% 622px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    background-image: url(../images/header/bg/png/bg-desk.png);
+    background-size: 100% 1036px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation {
+  display: none;
+}
+
+.burger-btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-hero__container {
+    position: relative;
+  }
+}
+
+.hero {
+  padding-top: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    text-align: start;
+  }
+}
+
+.hero__title {
+  display: inline-block;
+  font-family: "Caveat Brush";
+  font-size: 30px;
+  line-height: 1.26;
+  margin-bottom: 8px;
+  width: 224px;
+}
+@media screen and (max-width: 767.98px) {
+  .hero__title {
+    position: relative;
+    z-index: 20;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    font-size: 64px;
+    line-height: 1.02;
+    width: 490px;
+    margin-bottom: 16px;
+  }
+}
+
+.hero__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 768px) {
+  .hero__subtitle {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__subtitle {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+}
+
+.hero__btn-reg {
+  font-family: "Caveat Brush";
+  font-size: 18px;
+  line-height: 1.27;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 145px;
+  height: 40px;
+  margin-bottom: 40px;
+  background-color: #ab816c;
+  border-radius: 25px;
+}
+@media screen and (min-width: 768px) {
+  .hero__btn-reg {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__btn-reg {
+    font-size: 24px;
+    line-height: 1.25;
+    width: 158px;
+    height: 45px;
+    margin-bottom: 32px;
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .socials {
+    justify-content: start;
+  }
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.donut-group {
+  position: absolute;
+  top: -51px;
+  width: 130px;
+  height: 165px;
+}
+@media screen and (max-width: 767.98px) {
+  .donut-group {
+    left: -12px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279.98px) {
+  .donut-group {
+    top: -35px;
+    left: 289px;
+    width: 378px;
+    height: 396px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .donut-group {
+    top: -170px;
+    right: -77px;
+    width: 793px;
+    height: 831px;
+  }
+}
+
+.donut-group__img {
+  width: 100%;
+  height: auto;
+}
+
+.donut-group__item--1 {
+  position: absolute;
+  top: 44px;
+  right: 66px;
+  z-index: 18;
+}
+@media screen and (min-width: 768px) {
+  .donut-group__item--1 {
+    top: 106px;
+    right: 158px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .donut-group__item--1 {
+    top: 223px;
+    right: 332px;
+  }
+}
+
+.donut-group__item--2 {
+  position: absolute;
+  top: 55px;
+  right: 46px;
+  z-index: 17;
+}
+@media screen and (min-width: 768px) {
+  .donut-group__item--2 {
+    top: 127px;
+    right: 110px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .donut-group__item--2 {
+    top: 267px;
+    right: 231px;
+  }
+}
+
+.donut-group__item--3 {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+  z-index: 16;
+}
+@media screen and (min-width: 768px) {
+  .donut-group__item--3 {
+    bottom: 0;
+    right: 77px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .donut-group__item--3 {
+    bottom: 0;
+    right: 163px;
+  }
+}
+
+.donut-group__item--4 {
+  position: absolute;
+  bottom: 11px;
+  right: 0;
+  z-index: 15;
+}
+@media screen and (min-width: 768px) {
+  .donut-group__item--4 {
+    bottom: 26px;
+    right: 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .donut-group__item--4 {
+    bottom: 54px;
+    right: 0;
+  }
+}
+
+.donut-group__item--5 {
+  position: absolute;
+  top: 23px;
+  right: 66px;
+  z-index: 14;
+}
+@media screen and (min-width: 768px) {
+  .donut-group__item--5 {
+    top: 54px;
+    right: 158px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .donut-group__item--5 {
+    top: 114px;
+    right: 332px;
+  }
+}
+
+.donut-group__item--6 {
+  position: absolute;
+  top: 95px;
+  right: 85px;
+  z-index: 13;
+}
+@media screen and (min-width: 768px) {
+  .donut-group__item--6 {
+    top: 228px;
+    right: 203px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .donut-group__item--6 {
+    top: 478px;
+    right: 427px;
+  }
+}
+
+.donut-group__item--7 {
+  position: absolute;
+  top: 0;
+  right: 9px;
+  z-index: 12;
+}
+@media screen and (min-width: 768px) {
+  .donut-group__item--7 {
+    top: 0;
+    right: 15px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .donut-group__item--7 {
+    top: 0;
+    right: 32px;
+  }
+}
+
+.donut-group__item--8 {
+  position: absolute;
+  bottom: 18px;
+  right: 96px;
+  z-index: 11;
+}
+@media screen and (min-width: 768px) {
+  .donut-group__item--8 {
+    bottom: 42px;
+    right: 235px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .donut-group__item--8 {
+    bottom: 89px;
+    right: 493px;
+  }
+}
+
+.contact {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.contact__title {
+  margin-bottom: 16px;
+  text-align: center;
+  color: #2e2520;
+  font-family: "Caveat brush", cursive;
+  font-size: 24px;
+  line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+  .contact__title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__title {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+
+.contact__description {
+  margin-bottom: 16px;
+  text-align: center;
+  color: #2e2520;
+  font-size: 16px;
+  line-height: 1.25;
+}
+@media screen and (min-width: 1280px) {
+  .contact__description {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
+
+.contact__label {
+  display: block;
+}
+
+.contact__label + .contact__label {
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .contact__label + .contact__label {
+    margin-top: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__label + .contact__label {
+    margin-top: 15px;
+  }
+}
+
+.contact__input {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 280px;
+  border-top: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 1px solid #ab816c;
+  border-left: 0px solid transparent;
+  outline: none;
+  transition-property: border-bottom;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact__input:hover, .contact__input:focus {
+  border-bottom: 1px solid #2e2520;
+}
+@media screen and (min-width: 768px) {
+  .contact__input {
+    max-width: 336px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact__input {
+    max-width: 394px;
+  }
+}
+
+.contact__input::placeholder {
+  color: rgba(171, 129, 108, 0.5);
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.contact__input:invalid {
+  border-top: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 1px solid #ff0000;
+  border-left: 0px solid transparent;
+}
+
+.contact__button {
+  display: block;
+  text-align: center;
+  margin-top: 32px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 8px 57px;
+  border-radius: 25px;
+  font-family: "Caveat brush", cursive;
+  font-size: 18px;
+  line-height: 1.28;
+  background-color: #ab816c;
+  color: #ffffff;
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: filter;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact__button:hover, .contact__button:focus {
+  color: #000000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (min-width: 1280px) {
+  .contact__button {
+    padding: 8px 67px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+.footer {
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 20px;
+}
+
+.footer__socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__socials-list {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__socials-list {
+    margin-bottom: 80px;
+  }
+}
+
+.footer__social-item + .footer__social-item {
+  margin-left: 16px;
+}
+
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition-property: outline;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__social-link:hover, .footer__social-link:focus {
+  outline: 1px solid #ab816c;
+}
+
+.footer__social-icon {
+  fill: #2e2520;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__social-link:hover .footer__social-icon, .footer__social-link:focus .footer__social-icon {
+  fill: #ab816c;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .footer__bottom {
+    padding-right: 61px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__bottom {
+    padding-right: 289px;
+  }
+}
+
+.footer__icon {
+  margin-right: 4px;
+}
+
+.footer__telephone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2e2520;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1279px) {
+  .footer__telephone {
+    z-index: 999;
+  }
+}
+.footer__telephone:hover, .footer__telephone:focus {
+  color: #ab816c;
+}
+.footer__telephone .footer__icon {
+  fill: currentColor;
+  margin-right: 4px;
+}
+
+.footer__location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2e2520;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1279px) {
+  .footer__location {
+    z-index: 999;
+  }
+}
+
+.footer__pic {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .footer__pic {
+    width: 184px;
+    height: 119px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__pic {
+    width: 302px;
+    height: 175px;
+  }
+}
+
+.reviews {
+  padding-top: 20px;
+  padding-bottom: 16px;
+}
+.reviews__title {
+  font-family: "Caveat Brush";
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.reviews__list {
+  margin-bottom: 32px;
+}
+.reviews .reviews__item--active {
+  display: flex;
+  flex-direction: column;
+}
+.reviews__item {
+  display: none;
+}
+.reviews__img {
+  width: 280px;
+  margin: 0 auto;
+}
+.reviews__star {
+  margin-bottom: 8px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+.reviews__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+.reviews__icon:not(:last-child) {
+  margin-right: 4px;
+}
+.reviews__name {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #2e2520;
+}
+.reviews__text {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.reviews__counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #ab816c;
+}
+.reviews__counter::after {
+  content: "";
+  margin-left: 11px;
+  display: block;
+  width: 35px;
+  height: 1px;
+  background-color: #ab816c;
+}
+.reviews__counter::before {
+  content: "";
+  margin-right: 11px;
+  display: block;
+  width: 35px;
+  height: 1px;
+  background-color: #ab816c;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .reviews__title {
+    margin-bottom: 0;
+  }
+  .reviews__list {
+    position: relative;
+    display: flex;
+  }
+  .reviews__item {
+    display: block;
+  }
+  .reviews__img {
+    width: 336px;
+  }
+  .reviews__name {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=index.css.map */

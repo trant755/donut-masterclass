@@ -1,7 +1,6 @@
 .reviews {
   padding-top: 20px;
-  padding-bottom: 32px;
-  line-height: 1.25;
+  padding-bottom: 16px;
   &__title {
     font-family: 'Caveat Brush';
     font-weight: 400;
@@ -9,20 +8,23 @@
     text-align: center;
   }
   &__list {
-    margin-bottom: 8px;
-
+    margin-bottom: 32px;
+  }
+  .reviews__item--active {
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
   }
   &__item {
-    list-style: none;
+    display: none;
   }
   &__img {
     width: 280px;
-    margin-bottom: 8px;
+    margin: 0 auto;
   }
   &__star {
     margin-bottom: 8px;
+    margin-top: 8px;
 
     display: flex;
     justify-content: center;
@@ -32,23 +34,73 @@
     width: 24px;
     height: 24px;
   }
+  &__icon:not(:last-child) {
+    margin-right: 4px;
+  }
   &__name {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
     text-align: center;
+    color: $font-color-dark;
   }
   &__text {
-    margin-bottom: 32px;
-
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center;
   }
   &__counter {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: $brown;
+    &::after {
+      content: '';
+      margin-left: 11px;
+      display: block;
+      width: 35px;
+      height: 1px;
+      background-color: $brown;
+    }
+    &::before {
+      content: '';
+      margin-right: 11px;
+      display: block;
+      width: 35px;
+      height: 1px;
+      background-color: $brown;
+    }
   }
 }
 
-.reviews__item--john {
-  display: none;
+@media screen and(min-width: 768px) {
+  .reviews {
+    // Потом исправить!
+    padding-top: 50px;
+    padding-bottom: 40px;
+    &__title {
+      margin-bottom: 0;
+    }
+    &__list {
+      position: relative;
+      display: flex;
+    }
+    &__item {
+      display: block;
+    }
+    .reviews__item--active {
+      margin-top: 60px;
+    }
+    &__img {
+      width: 336px;
+    }
+    &__text {
+      margin-top: 20px;
+    }
+  }
 }
 
-.reviews__item--elisabeth {
-  display: none;
+@media screen and(min-width: 1280px) {
 }
