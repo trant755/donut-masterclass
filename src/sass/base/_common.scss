@@ -3,4 +3,54 @@
 body {
   font-family: 'Montserrat', sans-serif;
   min-width: 320px;
+
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+
+  color: $font-color-dark;
+
+  @include mq(desktop) {
+    background-color: #fffff9;
+  }
+
+  // Фоновое изображения
+
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 461px;
+
+  background-image: url(../images/header/bg/png/bg-mob.png);
+
+  //   background-image: -webkit-image-set(
+  //     url(../images/header/bg/webp/bg-mob.webp)
+  //   );
+
+  // tablet
+
+  @include mq(tablet) {
+    background-image: url(../images/header/bg/png/bg-tab.png);
+
+    background-size: 100% 622px;
+
+    // background-image: -webkit-image-set(
+    //   url(../images/header/bg/webp/bg-tab.webp)
+    // );
+  }
+
+  // desktop
+
+  @include mq(desktop) {
+    background-image: url(../images/header/bg/png/bg-desk.png);
+
+    background-size: 100% 1036px;
+
+    // background-image: -webkit-image-set(
+    //   url(../images/header/bg/webp/bg-desk.webp)
+    // );
+  }
+
+  // Фоновое изображение БОТОМ
 }

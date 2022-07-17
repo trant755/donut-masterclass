@@ -1,2 +1,48 @@
-.heder-hero {
+body {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 461px;
+
+  background-image: url(../images/header/bg/png/bg-mob.png);
+
+  //   background-image: -webkit-image-set(
+  //     url(../images/header/bg/webp/bg-mob.webp)
+  //   );
+
+  // tablet
+
+  @include mq(tablet) {
+    background-image: url(../images/header/bg/png/bg-tab.png);
+
+    background-size: 100% 622px;
+
+    // background-image: -webkit-image-set(
+    //   url(../images/header/bg/webp/bg-tab.webp)
+    // );
+  }
+
+  // desktop
+
+  @include mq(desktop) {
+    background-image: url(../images/header/bg/png/bg-desk.png);
+
+    background-size: 100% 1036px;
+
+    // background-image: -webkit-image-set(
+    //   url(../images/header/bg/webp/bg-desk.webp)
+    // );
+  }
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation {
+  display: none;
+}
+
+.burger-btn {
+  display: none;
 }
