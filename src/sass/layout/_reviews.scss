@@ -1,6 +1,7 @@
 .reviews {
+  // Потом исправить!
   padding-top: 20px;
-  padding-bottom: 16px;
+  padding-bottom: 32px;
   &__title {
     font-family: 'Caveat Brush';
     font-weight: 400;
@@ -8,6 +9,7 @@
     text-align: center;
   }
   &__list {
+    margin-top: 20px;
     margin-bottom: 32px;
   }
   .reviews__item--active {
@@ -19,7 +21,6 @@
     display: none;
   }
   &__img {
-    width: 280px;
     margin: 0 auto;
   }
   &__star {
@@ -80,10 +81,8 @@
     // Потом исправить!
     padding-top: 50px;
     padding-bottom: 40px;
-    &__title {
-      margin-bottom: 0;
-    }
     &__list {
+      margin-top: 0;
       position: relative;
       display: flex;
     }
@@ -93,9 +92,6 @@
     .reviews__item--active {
       margin-top: 60px;
     }
-    &__img {
-      width: 336px;
-    }
     &__text {
       margin-top: 20px;
     }
@@ -103,4 +99,25 @@
 }
 
 @media screen and(min-width: 1280px) {
+  .reviews {
+    // Потом исправить!
+    padding-top: 76px;
+    padding-bottom: 60px;
+    &__title {
+      margin-bottom: 0;
+    }
+    &__list {
+      margin-top: 35px;
+    }
+    &__item {
+      display: block;
+    }
+    .reviews__item--active {
+      margin-top: 143px;
+    }
+
+    &__text {
+      margin-top: 20px;
+    }
+  }
 }
