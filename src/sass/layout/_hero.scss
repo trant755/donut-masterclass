@@ -66,6 +66,12 @@
 
   background-color: $brown;
   border-radius: 25px;
+  transition: background-color 200ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-btn;
+  }
 
   @include mq(tablet) {
     margin-bottom: 20px;
@@ -92,9 +98,45 @@
 }
 
 .socials__item {
+  position: relative;
   &:not(:last-child) {
     margin-right: 16px;
   }
+}
+
+.socials__link:hover + .socials__item::before {
+  background-color: $brown;
+}
+
+.socials__link {
+  transition: color 200ms ease;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    z-index: -1;
+    transform: translate(-25%, -25%);
+    transition: background-color 250ms ease;
+
+    border-radius: 50%;
+    background-color: transparent;
+  }
+
+  &:hover:before,
+  &:focus:before {
+    background-color: $brown;
+  }
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
 }
 
 // donuts group
@@ -128,11 +170,25 @@
   height: auto;
 }
 
+// общие переменные
+$duration: 800ms;
+$timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$iteration-count: 1;
+$delay: 200ms;
+
 .donut-group__item--1 {
   position: absolute;
   top: 44px;
   right: 66px;
   z-index: 18;
+
+  opacity: 0;
+  animation-name: donut;
+  animation-duration: $duration;
+  animation-timing-function: $timing-function;
+  animation-iteration-count: $iteration-count;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
 
   @include mq(tablet) {
     top: 106px;
@@ -149,6 +205,14 @@
   right: 46px;
   z-index: 17;
 
+  opacity: 0;
+  animation-name: donut;
+  animation-duration: $duration;
+  animation-timing-function: $timing-function;
+  animation-iteration-count: $iteration-count;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+
   @include mq(tablet) {
     top: 127px;
     right: 110px;
@@ -163,6 +227,14 @@
   bottom: 0;
   right: 32px;
   z-index: 16;
+
+  opacity: 0;
+  animation-name: donut;
+  animation-duration: $duration;
+  animation-timing-function: $timing-function;
+  animation-iteration-count: $iteration-count;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
 
   @include mq(tablet) {
     bottom: 0;
@@ -179,6 +251,14 @@
   right: 0;
   z-index: 15;
 
+  opacity: 0;
+  animation-name: donut;
+  animation-duration: $duration;
+  animation-timing-function: $timing-function;
+  animation-iteration-count: $iteration-count;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+
   @include mq(tablet) {
     bottom: 26px;
     right: 0;
@@ -193,6 +273,14 @@
   top: 23px;
   right: 66px;
   z-index: 14;
+
+  opacity: 0;
+  animation-name: donut;
+  animation-duration: $duration;
+  animation-timing-function: $timing-function;
+  animation-iteration-count: $iteration-count;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
 
   @include mq(tablet) {
     top: 54px;
@@ -209,6 +297,14 @@
   right: 85px;
   z-index: 13;
 
+  opacity: 0;
+  animation-name: donut;
+  animation-duration: $duration;
+  animation-timing-function: $timing-function;
+  animation-iteration-count: $iteration-count;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+
   @include mq(tablet) {
     top: 228px;
     right: 203px;
@@ -224,6 +320,14 @@
   right: 9px;
   z-index: 12;
 
+  opacity: 0;
+  animation-name: donut;
+  animation-duration: $duration;
+  animation-timing-function: $timing-function;
+  animation-iteration-count: $iteration-count;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
+
   @include mq(tablet) {
     top: 0;
     right: 15px;
@@ -238,6 +342,14 @@
   bottom: 18px;
   right: 96px;
   z-index: 11;
+
+  opacity: 0;
+  animation-name: donut;
+  animation-duration: $duration;
+  animation-timing-function: $timing-function;
+  animation-iteration-count: $iteration-count;
+  animation-delay: $delay;
+  animation-fill-mode: forwards;
 
   @include mq(tablet) {
     bottom: 42px;
