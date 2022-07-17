@@ -1,129 +1,129 @@
 .footer {
-    position: relative;
-    background-color: #ffffff;
-    padding-top: 16px;
-    padding-bottom: 20px;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 20px;
 }
 
 .footer__socials-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 32px;
-    padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-left: 0;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 60px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        margin-bottom: 80px;
-    }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 80px;
+  }
 }
 
 .footer__social-item + .footer__social-item {
-    margin-left: 16px;
+  margin-left: 16px;
 }
 
 .footer__social-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
 
-    @include animation(outline);
+  @include animation(outline);
 
-    &:hover, &:focus {
-        outline: 1px solid #AB816C;
-    }
+  &:hover,
+  &:focus {
+    outline: 1px solid #ab816c;
+  }
 }
 
 .footer__social-icon {
-    fill: #2E2520;
+  fill: #2e2520;
 
-    @include animation(fill);
+  @include animation(fill);
 
-    .footer__social-link:hover &,
-    .footer__social-link:focus & {
-        fill: #AB816C;
-    }
+  .footer__social-link:hover &,
+  .footer__social-link:focus & {
+    fill: #ab816c;
+  }
 }
 
 .footer__bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    @media screen and (min-width: 768px) {
-        padding-right: 61px;
-    }
+  @media screen and (min-width: 768px) {
+    padding-right: 61px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        padding-right: 289px;
-    }
+  @media screen and (min-width: 1280px) {
+    padding-right: 289px;
+  }
 }
 
 .footer__icon {
-    margin-right: 4px;
+  margin-right: 4px;
 }
 
 .footer__telephone {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    font-size: 16px;
-    line-height: 1.25;
-    color: #2E2520;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2e2520;
 
-    @media screen and (max-width: 1279px) {
-        z-index: 999;
-    }
+  @media screen and (max-width: 1279px) {
+    z-index: 999;
+  }
 
-    @include animation(color);
+  @include animation(color);
 
-    &:hover,
-    &:focus {
-    color: #AB816C;
-    }
+  &:hover,
+  &:focus {
+    color: #ab816c;
+  }
 
-    & .footer__icon {
-        fill: currentColor;
-        margin-right: 4px;
-    }
+  & .footer__icon {
+    fill: currentColor;
+    margin-right: 4px;
+  }
 }
 
 .footer__location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    font-size: 16px;
-    line-height: 1.25;
-    color: #2E2520;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #2e2520;
 
-    @media screen and (max-width: 1279px) {
-        z-index: 999;
-    }
+  @media screen and (max-width: 1279px) {
+    z-index: 999;
+  }
 
-    @include animation(color);
+  @include animation(color);
 }
 
 .footer__pic {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 
-    @media screen and (min-width: 768px) {
-        width: 184px;
-        height: 119px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 184px;
+    height: 119px;
+  }
 
-    @media screen and (min-width: 1280px) {
-        width: 302px;
-        height: 175px;
-    }
+  @media screen and (min-width: 1280px) {
+    width: 302px;
+    height: 175px;
+  }
 }
