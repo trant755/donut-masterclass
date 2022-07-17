@@ -1,0 +1,16 @@
+@keyframes donut {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  40% {
+    transform: translateY(15%);
+  }
+  70% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
