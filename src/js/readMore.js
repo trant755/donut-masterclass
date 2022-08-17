@@ -4,9 +4,8 @@
 
     btn.addEventListener('click', (event) => {
         let target = event.target;
-        if (target.matches('.program__article_btn')) {
-            console.log('target: ', target);
-
-            article.classList.toggle('read_more');
-        }
+        article.classList.toggle('read_more');
+        target.textContent === 'Read more' ? target.textContent = 'Read less' :
+        target.textContent = 'Read more';            
+    
     });
