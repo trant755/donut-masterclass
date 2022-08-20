@@ -38,10 +38,6 @@
         background-color: inherit;
         border:none; 
         color: #AB816C;
-        &:hover + .read_more,
-        .read_more:hover {
-            max-height: 500px;
-        }
             @media screen and(min-width: 1280px) {
                 display:none;
             }
@@ -210,19 +206,34 @@
 .article {
     overflow: hidden;
     margin-bottom: 16px;
-    // max-height: auto;
-    // transition-property:transform ;
-    //   max-height: auto;
+    transition: max-height .5s;
+    //  @media screen and(min-width: 320px) {
+    //     max-height: 376px;
+    //     transition: max-height .5s;
+    // }
+    // @media screen and(min-width: 768px) {
+    //     max-height: 276px;
+    //     transition: max-height .5s;
+    // }
+    // @media screen and(min-width: 1280px) {
+    //     transition: max-height .5s;
+    //     max-height: auto;
+    // }
+}
+.full-heigth {
+    max-height: 500px;
 }
 .read_more {
-    transition: max-height .5s;
     @media screen and(min-width: 320px) {
         max-height: 376px;
+        transition: max-height .5s;
     }
     @media screen and(min-width: 768px) {
         max-height: 276px;
+        transition: max-height .5s;
     }
     @media screen and(min-width: 1280px) {
+        transition: max-height .5s;
         max-height: auto;
     } 
 }
